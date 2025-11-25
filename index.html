@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalyani Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Kalyani</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div>
+        <h2>Hello — I'm <span class="accent">Kalyani</span></h2>
+        <p class="lead">B.Tech graduate | Aspiring Frontend & Web Developer</p>
+        <a class="btn" href="#projects">See Projects</a>
+      </div>
+      <div class="hero-photo">
+        <!-- Placeholder circle -->
+        <div class="photo-circle">K</div>
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About Me</h3>
+      <p>I enjoy building clean, accessible user interfaces and learning modern web tools. Patient, detail-oriented and always learning.</p>
+    </section>
+
+    <section id="skills" class="container">
+      <h3>Skills</h3>
+      <ul class="skills-grid">
+        <li>HTML</li>
+        <li>CSS / Responsive Design</li>
+        <li>JavaScript (Vanilla)</li>
+        <li>React (Basics)</li>
+        <li>Git & Github</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Portfolio Website</h4>
+          <p>Responsive personal site built with HTML/CSS/JS.</p>
+          <a href="#" class="small-btn">View Code</a>
+        </article>
+        <article class="project">
+          <h4>Todo App</h4>
+          <p>LocalStorage-based todo list with add/edit/delete.</p>
+          <a href="#" class="small-btn">View Code</a>
+        </article>
+        <article class="project">
+          <h4>Weather App</h4>
+          <p>Fetches current weather from a public API.</p>
+          <a href="#" class="small-btn">View Code</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label>
+          Name
+          <input id="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input id="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p id="formMsg" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Kalyani • Web Developer</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

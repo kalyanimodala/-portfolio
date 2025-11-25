@@ -1,0 +1,65 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2b6bf6;
+  --muted:#6b7280;
+  --maxw:1000px;
+  --radius:10px;
+  --gap:18px;
+  font-family:Inter, system-ui, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111827;
+  line-height:1.5;
+}
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:28px;
+}
+.site-header{
+  background:transparent;
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo{margin:0;font-size:20px;font-weight:700}
+.nav{margin-left:auto;display:flex;gap:12px}
+.nav a{color:var(--muted);text-decoration:none}
+.menu-btn{display:none;background:none;border:none;font-size:20px}
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:40px 0;
+}
+.hero .lead{color:var(--muted);margin:8px 0 20px}
+.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none}
+.hero-photo .photo-circle{
+  width:140px;height:140px;border-radius:50%;
+  background:linear-gradient(135deg,#eef3ff,#dbe8ff);
+  display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:700;color:var(--accent)
+}
+.card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 6px 18px rgba(9,10,18,.06)}
+.skills-grid{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:12px 0}
+.skills-grid li{background:#fff;padding:10px 12px;border-radius:8px;box-shadow:0 4px 10px rgba(9,10,18,.04)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+.project{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(9,10,18,.04)}
+.small-btn{display:inline-block;margin-top:10px;padding:6px 10px;background:#eef2ff;color:var(--accent);border-radius:8px;text-decoration:none}
+.muted{color:var(--muted);font-size:14px;margin-top:8px}
+.site-footer{padding:24px 0;color:var(--muted);text-align:center}
+
+@media (max-width:800px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .nav{display:none}
+  .menu-btn{display:block;margin-left:auto}
+}
